@@ -8,12 +8,12 @@ var app = angular.module("ngApp", ['ngRoute']);
 app.config(function($routeProvider, $locationProvider){
 
     $routeProvider .when('/', {
-        templateUrl: '/index.html', 
+        templateUrl: '/templates/people.html', 
         controller: "PeopleController" 
     })
 
-    $routeProvider .when('/profile', {
-        templateUrl: '/profile.html', 
+    .when('/profile/:id', {
+        templateUrl: 'templates/profile.html', 
         controller: "PersonController" 
     })
 
@@ -34,8 +34,8 @@ app.controller("PeopleController", function($scope, PeopleService) {
     $scope.people = PeopleService.query();
 })
 
-app.controller('PersonController', function($scope, PeopleService, $routeParams){
-  console.log("Single Person Show")
+app.controller('PersonController', function($scope, PeopleService, $routeParams) {
+  console.log("Single Person Show");
   $scope.person = PeopleService.get($routeParams.id);
 })
 
