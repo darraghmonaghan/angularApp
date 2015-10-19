@@ -69,7 +69,9 @@ app.factory('PeopleService', function(){
 ALL_PEOPLE = [
         {
             id: 1,
-            Name: 'Bob',
+            image: '/pics/tommy.png',
+            Name: 'Tommy',
+            Company: 'Facebook',
             Interests: "Golf, Swimming, Drugs, Beer, Football, Chicken Wings",
             City: "San Francisco",
             Gender: "Male",
@@ -79,43 +81,39 @@ ALL_PEOPLE = [
         },
         {
             id: 2,
-            Name: 'Simon',
-            Interests: "Cooking, Photography, Drugs, Beer, Football, Chicken Wings",
+            image: '/pics/heather.png',
+            Name: 'Heather',
+            Company: "Google",
+            Interests: "Cooking, Photography, Reading, Writing Clean Code",
             City: "San Francisco",
-            Gender: "Male",
-            DOB: '26th April 1988',
-            Drugs: "No",
-            Met: "A Bar"
+            Gender: "Female",
+            DOB: 'N/A',
+            Drugs: "Pablo Escobar",
+            Met: "GA - Project 2"
         },
         {
             id: 3,
-            Name: 'Jenny',
-            Interests: "Cooking, Photography, Doing Drugs, Beer, Football, Chicken Wings",
+            image: '/pics/peter.png',
+            Name: 'Peter',
+            Company: 'Social Layover',
+            Interests: "Jessica Alba",
             City: "San Francisco",
             Gender: "Male",
-            DOB: '26th April 1988',
-            Drugs: "No",
-            Met: "Social Layover - Phonenix Airport"
+            DOB: 'Unknown',
+            Drugs: "Breaking Bad Style",
+            Met: "Networking event for dating app inventors"
         },
         {
             id: 4,
-            Name: 'Sally',
+            image: '/pics/nathan.png',
+            Name: 'Nathan',
+            Company: 'General Assembly',
             Interests: "Cooking, Photography, Drugs, Beer, Football, Chicken Wings",
             City: "San Francisco",
             Gender: "Male",
             DOB: '26th April 1988',
-            Drugs: "No",
-            Met: "A conference"
-        },
-        {
-            id: 5,
-            Name: 'President Obama',
-            Interests: "Cooking, Photography, Drugs, Beer, Football, Chicken Wings",
-            City: "San Francisco",
-            Gender: "Male",
-            DOB: '26th April 1988',
-            Drugs: "No",
-            Met: "The White House"
+            Drugs: "Only on days ending in 'Y' ",
+            Met: "Met Nathan at General Assembly SF, during WDI 21 course in August 2015"
         }
 ];
 
